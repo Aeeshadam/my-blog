@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     margin: 0;
+    min-height: 100vh;
   }
 
   h1, h2 {
@@ -35,5 +36,4 @@ const GlobalStyles = createGlobalStyle`
         font-size: clamp(2rem, 4vw, 3.6rem);
     }
 `;
-
 export default GlobalStyles;
