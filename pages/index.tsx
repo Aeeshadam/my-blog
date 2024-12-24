@@ -1,10 +1,14 @@
 import React from "react";
-import { Description, HomeContainer, Button } from "../styles/Home.styles";
+import {
+  Description,
+  SectionContainer,
+  SectionButton,
+} from "../styles/Shared.tyles";
 import Link from "next/link";
 
 const Home = () => {
   return (
-    <HomeContainer>
+    <SectionContainer>
       <h1>Welcome to My Blog</h1>
       <Description>
         Dive into a collection of posts about topics I’m passionate
@@ -12,9 +16,9 @@ const Home = () => {
         between. Explore, get inspired, and enjoy your stay!
       </Description>
       <Link href="/posts">
-        <Button>Explore Posts</Button>
+        <SectionButton>Explore Posts</SectionButton>
       </Link>
-    </HomeContainer>
+    </SectionContainer>
   );
 };
 

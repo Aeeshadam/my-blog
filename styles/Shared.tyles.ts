@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
+export const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@ export const Description = styled.p`
   margin: 2rem;
 `;
 
-export const Button = styled.button`
+export const SectionButton = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
   color: white;
   padding: 1rem 2rem;
