@@ -1,9 +1,8 @@
 import React from "react";
-import { SectionContainer, Description } from "../styles/Shared.tyles";
-
+import { SectionContainer, Description } from "../../styles/SharedStyles";
 const About = () => {
   return (
-    <SectionContainer>
+    <SectionContainer textAlign="center">
       <h2>About Me</h2>
       <Description>
         Welcome to my blog! Here, I share my thoughts on topics that excite me,

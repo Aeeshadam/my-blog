@@ -1,14 +1,14 @@
 import React from "react";
 import {
-  Description,
   SectionContainer,
+  Description,
   SectionButton,
-} from "../styles/Shared.tyles";
+} from "../styles/SharedStyles";
 import Link from "next/link";
 
 const Home = () => {
   return (
-    <SectionContainer>
+    <SectionContainer textAlign="center">
       <h1>Welcome to My Blog</h1>
       <Description>
         Dive into a collection of posts about topics I’m passionate
