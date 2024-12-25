@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 interface SectionProps {
-  textAlign: "center" | "left" | "right";
+  $textalign: "center" | "left" | "right";
 }
 export const SectionContainer = styled.section<SectionProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: ${(props) => props.textAlign};
+  text-align: ${(props) => props.$textalign};
   padding: 5rem 0;
 `;
 

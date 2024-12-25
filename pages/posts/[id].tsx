@@ -1,5 +1,6 @@
 import React from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
+import CustomHead from "../../components/CustomHead";
 import { SectionContainer } from "../../styles/SharedStyles";
 import { Post } from "../../types";
 import { getPostById, getPosts } from "../../utils.api";
@@ -11,12 +12,15 @@ interface PostProps {
 
 const PostPage: React.FC<PostProps> = ({ post }) => {
   return (
-    <SectionContainer textAlign="left">
-      <article>
-        <h3>{post.title}</h3>
-        <PostBody>{post.body}</PostBody>
-      </article>
-    </SectionContainer>
+    <>
+      <CustomHead title={post.title} description={post.body} />
+      <SectionContainer $textalign="left">
+        <article>
+          <h3>{post.title}</h3>
+          <PostBody>{post.body}</PostBody>
+        </article>
+      </SectionContainer>
+    </>
   );
 };
 
