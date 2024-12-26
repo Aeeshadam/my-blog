@@ -15,8 +15,15 @@ export const NavContainer = styled.nav`
     padding: 0;
     gap: ${({ theme }) => theme.spacing.large};
   }
+`;
 
-  li {
-    cursor: pointer;
+export const NavItem = styled.li<{ isActive: boolean }>`
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  color: ${({ theme, isActive }) =>
+    isActive ? theme.colors.primary : theme.colors.text};
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;

@@ -16,7 +16,7 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.colors.text};
   opacity: 0.8;
   max-width: 600px;
-  margin: 2rem;
+  margin: ${({ theme }) => theme.spacing.small} auto;
 `;
 
 export const SectionButton = styled.button`
@@ -26,28 +26,13 @@ export const SectionButton = styled.button`
   border: none;
   border-radius: ${({ theme }) => theme.spacing.small};
   cursor: pointer;
-  margin-top: 2rem;
+  margin-top: ${({ theme }) => theme.spacing.medium};
 `;
 
-export const NotFoundContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
+export const NotFoundContainer = styled(SectionContainer)`
   text-align: center;
-  background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
-
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
+  gap: ${({ theme }) => theme.spacing.small};
 
   a {
     color: ${({ theme }) => theme.colors.primary};
