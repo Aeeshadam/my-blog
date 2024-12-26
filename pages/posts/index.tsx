@@ -18,7 +18,7 @@ const Posts: React.FC<PostsProps> = ({ posts }) => {
   const handleSearch = (query: string) => {
     const lowerCaseQuery = query.toLowerCase();
     setFilteredPosts(
-      posts.filter(
+      posts?.filter(
         (post) =>
           post.title.toLowerCase().includes(lowerCaseQuery) ||
           post.body.toLowerCase().includes(lowerCaseQuery)

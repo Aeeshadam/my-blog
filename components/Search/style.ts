@@ -10,7 +10,7 @@ export const SearchContainer = styled.div`
 export const SearchInput = styled.input`
   padding: 1rem;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.spacing.small};
 

@@ -9,10 +9,10 @@ const Navbar = () => {
   return (
     <NavContainer>
       <ul>
-        {links.map(({ id, label, route, icon }) => {
+        {links?.map(({ id, label, route, icon }) => {
           const isActive = router.pathname === route;
           return (
-            <NavItem key={id} isActive={isActive}>
+            <NavItem key={id} $isactive={isActive}>
               <Link href={route}>
                 <span>
                   {icon} {label}

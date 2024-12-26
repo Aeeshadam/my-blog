@@ -17,11 +17,11 @@ export const NavContainer = styled.nav`
   }
 `;
 
-export const NavItem = styled.li<{ isActive: boolean }>`
+export const NavItem = styled.li<{ $isactive: boolean }>`
   cursor: pointer;
   transition: color 0.2s ease-in-out;
-  color: ${({ theme, isActive }) =>
-    isActive ? theme.colors.primary : theme.colors.text};
+  color: ${({ theme, $isactive }) =>
+    $isactive ? theme.colors.primary : theme.colors.text};
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
