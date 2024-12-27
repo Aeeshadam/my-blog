@@ -2,8 +2,8 @@ import React from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import CustomHead from "../../components/CustomHead";
 import { SectionContainer } from "../../styles/SharedStyles";
-import { Post } from "../../types";
-import { getPostById, getPosts } from "../../utils.api";
+import { Post } from "../../lib/types";
+import { getPostById, getPosts } from "../../lib/utils/api";
 import { PostBody } from "./style";
 
 interface PostProps {

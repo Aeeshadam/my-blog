@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { links } from "../../constants";
+import { links } from "../../lib/constants";
 import { NavContainer, NavItem } from "./style";
 
 const Navbar = () => {

@@ -5,8 +5,8 @@ import CustomHead from "../../components/CustomHead";
 import Search from "../../components/Search";
 import { SectionContainer } from "../../styles/SharedStyles";
 import { PostsContainer, PostCard } from "./style";
-import { getPosts } from "../../utils.api";
-import { Post } from "../../types";
+import { getPosts } from "../../lib/utils/api";
+import { Post } from "../../lib/types";
 
 interface PostsProps {
   posts: Post[];

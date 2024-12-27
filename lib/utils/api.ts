@@ -1,4 +1,4 @@
-import { Post } from "./types";
+import { Post } from "../types";
 
 const API_URL = "https://jsonplaceholder.typicode.com";
 
