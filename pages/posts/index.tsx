@@ -4,7 +4,7 @@ import { GetStaticProps } from "next";
 import CustomHead from "../../components/CustomHead";
 import Search from "../../components/Search";
 import { SectionContainer } from "../../styles/SharedStyles";
-import { PostsContainer, PostCard } from "./style";
+import { PostsContainer, PostCard } from "../../styles/PostStyle";
 import { getPosts } from "../../lib/utils/api";
 import { Post } from "../../lib/types";
 
