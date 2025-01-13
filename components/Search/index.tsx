@@ -1,4 +1,5 @@
 import { useState, FC } from "react";
+import { debounce } from "../../lib/utils/debounce";
 import { SearchContainer, SearchInput } from "./style";
 
 interface SearchProps {
@@ -8,10 +9,12 @@ interface SearchProps {
 const Search: FC<SearchProps> = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
+  const debouncedSearch = debounce(onSearch, 300);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setQuery(value);
-    onSearch(value);
+    debouncedSearch(value);
   };
   return (
     <SearchContainer>
