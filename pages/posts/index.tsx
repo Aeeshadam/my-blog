@@ -3,10 +3,10 @@ import Link from "next/link";
 import { GetStaticProps } from "next";
 import CustomHead from "../../components/CustomHead";
 import Search from "../../components/Search";
-import { SectionContainer } from "../../styles/SharedStyles";
-import { PostsContainer, PostCard } from "../../styles/PostStyle";
 import { getPosts } from "../../lib/utils/api";
 import { Post } from "../../lib/types";
+import { SectionContainer } from "../../styles/SharedStyles";
+import { PostsContainer, PostCard } from "../../styles/PostStyle";
 
 interface PostsProps {
   posts: Post[];
@@ -19,16 +19,16 @@ const Posts: FC<PostsProps> = ({ posts }) => {
     const lowerCaseQuery = query.toLowerCase();
     setFilteredPosts(
       posts?.filter(
-        (post) =>
-          post.title.toLowerCase().includes(lowerCaseQuery) ||
-          post.body.toLowerCase().includes(lowerCaseQuery)
+        ({ title, body }) =>
+          title.toLowerCase().includes(lowerCaseQuery) ||
+          body.toLowerCase().includes(lowerCaseQuery)
       )
     );
   };
 
   return (
     <>
-      <CustomHead title="My Blog - Posts" />
+      <CustomHead title="Posts" />
       <SectionContainer $textAlign="left">
         <h2>Blog Posts</h2>
         <Search onSearch={handleSearch} />
@@ -36,11 +36,11 @@ const Posts: FC<PostsProps> = ({ posts }) => {
           {!posts || filteredPosts.length === 0 ? (
             <p>No posts found at the moment</p>
           ) : (
-            filteredPosts.map((post) => (
-              <Link key={post.id} href={`/posts/${post.id}`}>
+            filteredPosts.map(({ id, title, body }) => (
+              <Link key={id} href={`/posts/${id}`}>
                 <PostCard>
-                  <h4>{post.title}</h4>
-                  <p>{post.body}</p>
+                  <h4>{title}</h4>
+                  <p>{body}</p>
                 </PostCard>
               </Link>
             ))

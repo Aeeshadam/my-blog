@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import CustomHead from "../../components/CustomHead";
-import { SectionContainer } from "../../styles/SharedStyles";
 import { Post } from "../../lib/types";
 import { getPostById, getPosts } from "../../lib/utils/api";
 import { PostBody } from "../../styles/PostStyle";
+import { SectionContainer } from "../../styles/SharedStyles";
 
 interface PostProps {
   post: Post;

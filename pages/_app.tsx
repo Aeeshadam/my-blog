@@ -1,8 +1,8 @@
 import { ThemeProvider } from "styled-components";
+import Navbar from "../components/Navbar";
 import { theme } from "../styles/theme";
 import GlobalStyles from "../styles/GlobalStyles";
 import { Container } from "../styles/Container.style";
-import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (

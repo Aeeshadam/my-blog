@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <CustomHead
-        title="My Blog - About"
+        title="About"
         description="Welcome to my blog! Here, I share my thoughts on topics that excite
           me, from technology and programming to personal growth and creative
           pursuits."

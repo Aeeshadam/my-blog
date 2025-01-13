@@ -19,7 +19,7 @@ const Search: FC<SearchProps> = ({ onSearch }) => {
         onChange={handleChange}
         placeholder="Search for a post"
         value={query}
-        type="text"
+        type="search"
       />
     </SearchContainer>
   );

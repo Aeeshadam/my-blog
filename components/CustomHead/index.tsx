@@ -8,13 +8,13 @@ interface CustomHeadProps {
 }
 
 const CustomHead: FC<CustomHeadProps> = ({
-  title = "My Blog",
+  title,
   description = "Explore insightful posts",
   keywords = "blog, posts, articles",
 }) => {
   return (
     <Head>
-      <title>{title}</title>
+      <title>My Blog {title ? `- ${title}` : ""}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
     </Head>
