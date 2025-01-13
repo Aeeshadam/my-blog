@@ -6,11 +6,11 @@ const About = () => {
     <>
       <CustomHead
         title="My Blog - About"
-        description="  Welcome to my blog! Here, I share my thoughts on topics that excite
+        description="Welcome to my blog! Here, I share my thoughts on topics that excite
           me, from technology and programming to personal growth and creative
           pursuits."
       />
-      <SectionContainer $textalign="center">
+      <SectionContainer $textAlign="center">
         <h2>About Me</h2>
         <Description>
           Welcome to my blog! Here, I share my thoughts on topics that excite

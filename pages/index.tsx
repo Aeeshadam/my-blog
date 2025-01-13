@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <CustomHead />
-      <SectionContainer $textalign="center">
+      <SectionContainer $textAlign="center">
         <h1>Welcome to My Blog</h1>
         <Description>
           Dive into a collection of posts about topics I’m passionate

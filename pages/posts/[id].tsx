@@ -14,7 +14,7 @@ const PostPage: FC<PostProps> = ({ post }) => {
   return (
     <>
       <CustomHead title={post.title} description={post.body} />
-      <SectionContainer $textalign="left">
+      <SectionContainer $textAlign="left">
         <article>
           <h3>{post.title}</h3>
           <PostBody>{post.body}</PostBody>

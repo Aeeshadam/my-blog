@@ -33,5 +33,9 @@ const GlobalStyles = createGlobalStyle`
     h2 {
         font-size: clamp(2rem, 4vw, 3.6rem);
     }
+
+    h3{
+      font-weight: 600;
+    }
 `;
 export default GlobalStyles;

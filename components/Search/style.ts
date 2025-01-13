@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const SEARCH_MAX_WIDTH = "400px";
+
 export const SearchContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -8,14 +10,14 @@ export const SearchContainer = styled.div`
 `;
 
 export const SearchInput = styled.input`
-  padding: 1rem;
+  padding: ${({ theme }) => theme.spacing.XS};
   width: 100%;
-  max-width: 400px;
+  max-width: ${SEARCH_MAX_WIDTH};
   border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: ${({ theme }) => theme.spacing.small};
+  border-radius: ${({ theme }) => theme.spacing.XS};
 
   &::placeholder {
     color: ${({ theme }) => theme.colors.grey};
-    opacity: 0.7;
+    opacity: ${({ theme }) => theme.opacity.default};
   }
 `;

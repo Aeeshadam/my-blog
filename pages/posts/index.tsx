@@ -29,7 +29,7 @@ const Posts: FC<PostsProps> = ({ posts }) => {
   return (
     <>
       <CustomHead title="My Blog - Posts" />
-      <SectionContainer $textalign="left">
+      <SectionContainer $textAlign="left">
         <h2>Blog Posts</h2>
         <Search onSearch={handleSearch} />
         <PostsContainer>
