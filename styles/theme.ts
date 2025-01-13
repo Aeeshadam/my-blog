@@ -21,6 +21,7 @@ export const theme = {
     desktop: "1024px",
   },
   fontSizes: {
+    xsmall: "1rem",
     small: "1.2rem",
   },
   opacity: {

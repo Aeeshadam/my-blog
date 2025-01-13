@@ -5,7 +5,7 @@ const SEARCH_MAX_WIDTH = "400px";
 export const SearchContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin: ${({ theme }) => theme.spacing.medium};
+  margin: ${({ theme }) => theme.spacing.S};
   width: 100%;
 `;
 

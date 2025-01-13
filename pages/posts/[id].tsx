@@ -27,7 +27,7 @@ const PostPage: FC<PostProps> = ({ post }) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   try {
     const posts = await getPosts();
-    const paths = posts?.slice(0, 50).map((post) => ({
+    const paths = posts?.map((post) => ({
       params: { id: post.id.toString() },
     }));
     return {
