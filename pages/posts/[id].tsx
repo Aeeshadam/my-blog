@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import CustomHead from "../../components/CustomHead";
 import { SectionContainer } from "../../styles/SharedStyles";
@@ -10,7 +10,7 @@ interface PostProps {
   post: Post;
 }
 
-const PostPage: React.FC<PostProps> = ({ post }) => {
+const PostPage: FC<PostProps> = ({ post }) => {
   return (
     <>
       <CustomHead title={post.title} description={post.body} />

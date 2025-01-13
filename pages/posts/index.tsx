@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, FC } from "react";
 import Link from "next/link";
 import { GetStaticProps } from "next";
 import CustomHead from "../../components/CustomHead";
@@ -12,7 +12,7 @@ interface PostsProps {
   posts: Post[];
 }
 
-const Posts: React.FC<PostsProps> = ({ posts }) => {
+const Posts: FC<PostsProps> = ({ posts }) => {
   const [filteredPosts, setFilteredPosts] = useState<Post[]>(posts);
 
   const handleSearch = (query: string) => {

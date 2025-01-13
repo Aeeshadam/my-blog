@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import Head from "next/head";
 
 interface CustomHeadProps {
@@ -7,7 +7,7 @@ interface CustomHeadProps {
   keywords?: string;
 }
 
-const CustomHead: React.FC<CustomHeadProps> = ({
+const CustomHead: FC<CustomHeadProps> = ({
   title = "My Blog",
   description = "Explore insightful posts",
   keywords = "blog, posts, articles",

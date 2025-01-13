@@ -1,4 +1,3 @@
-import React from "react";
 import CustomHead from "../../components/CustomHead";
 import { SectionContainer, Description } from "../../styles/SharedStyles";
 
